@@ -57,7 +57,7 @@ export function Navbar() {
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>About me</a>
+                               className={liClass}>A propos</a>
                         </li>
                         <li>
                             <a href="#"
