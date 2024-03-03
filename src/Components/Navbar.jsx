@@ -1,17 +1,27 @@
 import logo from '../assets/logo/logotransparentwhite.png'
+import {useState} from "react";
 
 // eslint-disable-next-line react/prop-types
 export function Navbar() {
 
-        let navClass = "border-gray-200 bg-blue-900"
-        let globalDivClass = "max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        let navClass = "bg-blue-900"
+        let globalDivClass = "flex flex-col justify-center items-center mx-auto p-4 md:max-w-screen md:flex-row md:justify-between"
+        //let globalDivClass = "flex-wrap"
         let leftDivClass = "flex items-center"
-        let imageClass = "h-24"
-        let textClass = "capitalize font-bold text-white  text-3xl"
+        let imageClass = "h-24 me-8"
+        let textClass = "capitalize font-bold text-white text-xl sm:text-3xl"
         let rightDivClass = "w-full md:block md:w-auto"
-        let ulClass = "font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse " +
-            "md:mt-0 md:border-0  bg-blue-900 md:bg-blue-900 border-gray-700"
+        let ulClass = "font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 " +
+            "md:mt-0 md:border-0  bg-blue-900 md:bg-blue-900 border-gray-400"
         let liClass = "block py-2 px-3 bg-blue-900 rounded md:bg-transparent md:p-2 text-white hover:bg-blue-950"
+
+
+
+    const [isMenuOpen, setIsMenuOpen] = useState('false')
+    function openMenu(){
+            setIsMenuOpen(!isMenuOpen)
+    }
+
 
 
     return <>
@@ -22,7 +32,25 @@ export function Navbar() {
                     <p className={textClass}>yassine négoce</p>
                 </div>
 
-                <div className={rightDivClass}>
+
+                <button type="button"
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                        onClick={openMenu}>
+                    <span className="sr-only">Ouvrir le menu</span>
+                    <svg className="w-5 h-5"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 17 14">
+                        <path stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+
+
+                <div className={`${rightDivClass} ${!isMenuOpen ? '' : 'hidden'}`}>
                     <ul className={ulClass}>
                         <li>
                             <a href="#"
@@ -30,7 +58,7 @@ export function Navbar() {
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>Qui suis-je ?</a>
+                               className={liClass}>About</a>
                         </li>
                         <li>
                             <a href="#"

@@ -16,10 +16,10 @@ function App() {
     })
   */
 
-  return <>
+  return <div className="scroll-smooth">
     <Navbar />
     <Body scroll={scroll}/>
-  </>
+  </div>
 
 }
 
