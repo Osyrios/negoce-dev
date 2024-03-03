@@ -1,9 +1,9 @@
 import {Navbar} from "./Components/Navbar.jsx";
 import {Body} from "./Components/Body.jsx"
-import {useEffect, useState} from "react";
+//import {useEffect, useState} from "react";
 function App() {
 
-//Scroll tracker for navbar changes//
+/*Scroll tracker for navbar changes
     const [scroll, setScroll] = useState(0)
     useEffect(()=>{
         const handler = () =>{
@@ -14,11 +14,7 @@ function App() {
             removeEventListener('scroll', handler)
         }
     })
-
-  //
-
-
-
+  */
 
   return <>
     <Navbar />

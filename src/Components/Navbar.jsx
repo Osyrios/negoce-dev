@@ -26,15 +26,20 @@ export function Navbar() {
                     <ul className={ulClass}>
                         <li>
                             <a href="#"
-                               className={liClass}>Home</a>
+                               className={liClass}>Accueil</a>
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>About me</a>
+                               className={liClass}>Qui suis-je ?</a>
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>My projects</a>
+                               className={liClass}>Mon Parcours</a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                               className={liClass}>Mes projets</a>
                         </li>
                         <li>
                             <a href="#"
