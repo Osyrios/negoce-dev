@@ -6,7 +6,6 @@ export function Navbar() {
 
         let navClass = "bg-blue-900"
         let globalDivClass = "flex flex-col justify-center items-center mx-auto p-4 md:max-w-screen md:flex-row md:justify-between"
-        //let globalDivClass = "flex-wrap"
         let leftDivClass = "flex items-center"
         let imageClass = "h-24 me-8"
         let textClass = "capitalize font-bold text-white text-xl sm:text-3xl"
@@ -58,11 +57,11 @@ export function Navbar() {
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>About</a>
+                               className={liClass}>About me</a>
                         </li>
                         <li>
                             <a href="#"
-                               className={liClass}>Mon Parcours</a>
+                               className={liClass}>Mon parcours</a>
                         </li>
 
                         <li>
