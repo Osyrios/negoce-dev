@@ -1,5 +1,5 @@
-import {Navbar} from "./Components/Navbar.jsx";
-import {Body} from "./Components/Body.jsx"
+import {Navbar} from "./Components/GlobalSections/Navbar.jsx";
+import {Body} from "./Components/GlobalSections/Body.jsx"
 //import {useEffect, useState} from "react";
 function App() {
 

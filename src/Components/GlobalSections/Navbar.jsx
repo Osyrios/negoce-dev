@@ -1,4 +1,4 @@
-import logo from '../assets/logo/logotransparentwhite.png'
+import logo from '../../assets/logo/logotransparentwhite.png'
 import {useState} from "react";
 
 // eslint-disable-next-line react/prop-types
