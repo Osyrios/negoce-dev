@@ -6,7 +6,7 @@ import {SectionTitle} from "./SectionTitle.jsx";
 export function Body(){
 
     return <div className="h-auto bg-gray-400">
-            <div className="mx-52 p-8">
+            <div className="lg:mx-52 lg:p-8 m-0 p-O">
                 <MainTitle/>
                 <SectionTitle title={"Qui suis-je ?"}/>
                 <AboutMe/>

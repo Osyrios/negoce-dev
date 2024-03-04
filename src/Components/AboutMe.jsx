@@ -2,11 +2,11 @@ import logoWhite from '../assets/logo/logoWhite.png'
 
 export function AboutMe(){
     return <>
-        <div className="flex flex-row gap-9 mt-16 mb-40">
+        <div className="flex flex-col gap-5 mt-5 mb-16 mx-7 md:flex-row md:gap-9 md:mt-16 md:mb-40">
             <div className="flex justify-center items-center ellip">
                 <img src={logoWhite}
                      alt="image avec le logo YN"
-                     className={"rounded-full w-auto h-auto"}
+                     className="h-1/2 w-1/2 md:h-auto md:w-auto"
                      style={{clipPath: 'ellipse(30% 50%)'}}
                 />
             </div>
