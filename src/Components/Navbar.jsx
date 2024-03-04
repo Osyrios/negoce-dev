@@ -5,7 +5,7 @@ import {useState} from "react";
 export function Navbar() {
 
         let navClass = "bg-blue-900"
-        let globalDivClass = "flex flex-col justify-center items-center mx-auto p-4 md:max-w-screen md:flex-row md:justify-between"
+        let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 md:max-w-screen md:flex-row md:justify-between md:px-16"
         let leftDivClass = "flex items-center"
         let imageClass = "h-24 me-8"
         let textClass = "capitalize font-bold text-white text-xl sm:text-3xl"
@@ -24,7 +24,7 @@ export function Navbar() {
 
 
     return <>
-        <nav className={navClass}>
+        <div className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
                     <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
@@ -75,7 +75,7 @@ export function Navbar() {
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
     </>
 }
 
