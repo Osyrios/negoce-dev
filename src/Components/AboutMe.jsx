@@ -11,7 +11,7 @@ export function AboutMe(){
                 />
             </div>
             <div>
-                <p className="">
+                <p className="text-">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id euismod nisl.
                     Etiam tristique nec purus vel imperdiet. Maecenas imperdiet placerat ante, eget laoreet neque suscipit quis.
                     Nullam nec lectus augue. Vivamus sagittis, lectus nec cursus tristique, libero magna mattis sem, in convallis

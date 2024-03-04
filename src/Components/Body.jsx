@@ -5,8 +5,8 @@ import {SectionTitle} from "./SectionTitle.jsx";
 // eslint-disable-next-line react/prop-types
 export function Body(){
 
-    return <div className="h-auto bg-gray-400">
-            <div className="lg:mx-52 lg:p-8 m-0 p-O">
+    return <div className="h-auto bg-gray-400 scroll-smooth">
+            <div className="m-0 p-O lg:mx-52 lg:p-8">
                 <MainTitle/>
                 <SectionTitle title={"Qui suis-je ?"}/>
                 <AboutMe/>

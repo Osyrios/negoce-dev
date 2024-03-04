@@ -16,7 +16,7 @@ function App() {
     })
   */
 
-  return <div className="scroll-smooth">
+  return <div>
     <Navbar />
     <Body scroll={scroll}/>
   </div>

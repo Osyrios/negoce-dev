@@ -10,9 +10,9 @@ export function Navbar() {
         let imageClass = "h-24 me-8"
         let textClass = "capitalize font-bold text-white text-xl sm:text-3xl"
         let rightDivClass = "w-full md:block md:w-auto"
-        let ulClass = "font-bold flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 " +
-            "md:mt-0 md:border-0  bg-blue-900 md:bg-blue-900 border-gray-400"
-        let liClass = "block py-2 px-3 bg-blue-900 rounded md:bg-transparent md:p-2 text-white hover:bg-blue-950"
+        let ulClass = "font-bold flex flex-col p-4 mt-4 border rounded-lg bg-blue-900 border-gray-400" +
+            "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
+        let liClass = "block py-2 px-3 bg-blue-900 rounded text-white hover:bg-blue-950 md:p-2 md:bg-transparent"
 
 
 
