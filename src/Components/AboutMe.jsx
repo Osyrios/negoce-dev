@@ -1,13 +1,13 @@
-import logoWhite from '../assets/logo/logoWhite.png'
+import photoYassine from '../assets/photo-yassine.jpeg'
 
 export function AboutMe(){
     return <>
         <div className="flex flex-col gap-5 mt-5 mb-16 mx-7 md:flex-row md:gap-9 md:mt-16 md:mb-40">
             <div className="flex justify-center items-center ellip">
-                <img src={logoWhite}
+                <img src={photoYassine}
                      alt="image avec le logo YN"
-                     className="h-1/2 w-1/2 md:h-auto md:w-auto"
-                     style={{clipPath: 'ellipse(30% 50%)'}}
+                     className="h-1/3 w-1/3 md:h-auto md:w-auto rounded-full mt-4"
+                     style={{}}
                 />
             </div>
             <div>
