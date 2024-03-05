@@ -14,6 +14,7 @@ export function Body(){
                 <AboutMe/>
                 <SectionTitle title={"Mon Parcours"}/>
                 <ProfessionalPath/>
+                <SectionTitle title={"Formations"}/>
                 <SchoolPath/>
             </div>
         </div>
