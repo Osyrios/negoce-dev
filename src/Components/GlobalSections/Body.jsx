@@ -8,7 +8,7 @@ import {SchoolPath} from "../SchoolPath.jsx";
 export function Body(){
 
     return <div className="h-auto bg-gray-400 scroll-smooth">
-            <div className="m-0 p-O lg:mx-52 lg:p-8">
+            <div className="mx-2 p-2 md:mx-32 md:p-4 xl:mx-52 xl:p-8">
                 <MainTitle/>
                 <SectionTitle title={"Qui suis-je ?"}/>
                 <AboutMe/>

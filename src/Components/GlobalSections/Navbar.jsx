@@ -5,10 +5,10 @@ import {useState} from "react";
 export function Navbar() {
 
         let navClass = "bg-blue-900"
-        let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 md:max-w-screen md:flex-row md:justify-between md:px-16"
+        let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 xl:max-w-screen xl:flex-row xl:justify-between md:px-16"
         let leftDivClass = "flex items-center"
         let imageClass = "h-24 me-8"
-        let textClass = "capitalize font-bold text-white text-xl sm:text-3xl"
+        let textClass = "capitalize font-bold text-white text-xl md:text-3xl"
         let rightDivClass = "w-full md:block md:w-auto"
         let ulClass = "font-bold flex flex-col p-4 mt-4 border rounded-lg bg-blue-900 border-gray-400" +
             "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
