@@ -24,7 +24,7 @@ export function Navbar() {
 
 
     return <>
-        <div className={navClass}>
+        <div className={navClass} id="top">
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
                     <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
@@ -56,20 +56,20 @@ export function Navbar() {
                                className={liClass}>Accueil</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#aboutMe"
                                className={liClass}>A propos</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#path"
                                className={liClass}>Mon parcours</a>
                         </li>
 
                         <li>
-                            <a href="#"
+                            <a href="#projects"
                                className={liClass}>Mes projets</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#contacts"
                                className={liClass}>Contacts</a>
                         </li>
                     </ul>

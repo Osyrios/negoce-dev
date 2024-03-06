@@ -6,7 +6,7 @@ export function AboutMe(){
             <div className="flex justify-center items-center ellip">
                 <img src={photoYassine}
                      alt="image avec le logo YN"
-                     className="h-1/3 w-1/3 md:h-auto md:w-auto rounded-full mt-4"
+                     className="h-1/3 w-1/3 md:h-auto md:w-auto rounded-full mt-4 hover:animate-spin"
                      style={{}}
                 />
             </div>
