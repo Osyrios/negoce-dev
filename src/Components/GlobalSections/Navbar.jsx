@@ -4,7 +4,7 @@ import {useState} from "react";
 // eslint-disable-next-line react/prop-types
 export function Navbar() {
 
-        let navClass = "bg-blue-900"
+        let navClass = "bg-blue-900 "
         let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 xl:max-w-screen xl:flex-row xl:justify-between md:px-16"
         let leftDivClass = "flex items-center font-designer"
         let imageClass = "h-24 me-8"
