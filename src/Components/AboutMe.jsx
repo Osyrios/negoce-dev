@@ -2,7 +2,7 @@ import photoYassine from '../assets/photo-yassine.jpeg'
 
 export function AboutMe(){
     return <>
-        <div className="flex flex-col gap-5 mt-5 mb-16 mx-7 md:flex-row md:gap-9 md:mt-16 md:mb-40">
+        <div className="flex flex-col justify-center gap-5 mt-5 mb-16 mx-7 md:flex-row md:gap-9 md:mt-16 md:mb-32">
             <div className="flex justify-center items-center ellip">
                 <img src={photoYassine}
                      alt="image avec le logo YN"
@@ -10,7 +10,7 @@ export function AboutMe(){
                      style={{}}
                 />
             </div>
-            <div>
+            <div className="flex items-center">
                 <p className="text-">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id euismod nisl.
                     Etiam tristique nec purus vel imperdiet. Maecenas imperdiet placerat ante, eget laoreet neque suscipit quis.

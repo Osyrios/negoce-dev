@@ -41,7 +41,7 @@ export function ProfessionalPath({anchor}) {
             'sector': 'Jeux Video',
             'position': 'Comptable',
             'start': '',
-            'end': 'Today',
+            'end': "Aujourd'hui",
             'description': ''
         }
     ]
@@ -54,7 +54,7 @@ export function ProfessionalPath({anchor}) {
 
     return <div className='m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14' id={anchor}>
 
-        <div className="md:flex-row md:flex md:justify-between flex flex-col items-center">
+        <div className="md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
             {jobs.map((job) =>
                 <div className='flex flex-col items-center my-2 ' key={job.company}>
                     <div className=' hover:underline hover:font-bold flex flex-col justify-end hover:animate-bounce'>

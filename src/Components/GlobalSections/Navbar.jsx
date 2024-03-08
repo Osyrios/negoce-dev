@@ -6,7 +6,7 @@ export function Navbar() {
 
         let navClass = "bg-blue-900"
         let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 xl:max-w-screen xl:flex-row xl:justify-between md:px-16"
-        let leftDivClass = "flex items-center"
+        let leftDivClass = "flex items-center md:font-designer"
         let imageClass = "h-24 me-8"
         let textClass = "capitalize font-bold text-white text-xl md:text-3xl"
         let rightDivClass = "w-full md:block md:w-auto"
