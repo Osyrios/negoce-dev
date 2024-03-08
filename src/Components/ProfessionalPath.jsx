@@ -83,7 +83,7 @@ export function ProfessionalPath({anchor}) {
                    className="me-2"
                    onChange={showDescription}
                    checked={isDescriptionDisplayed}/>
-            <label htmlFor="descriiption">Afficher les descriptions</label>
+            <label htmlFor="description">Afficher les descriptions</label>
         </div>
 
     </div>
