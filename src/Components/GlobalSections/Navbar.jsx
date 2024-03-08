@@ -6,10 +6,10 @@ export function Navbar() {
 
         let navClass = "bg-blue-900"
         let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 xl:max-w-screen xl:flex-row xl:justify-between md:px-16"
-        let leftDivClass = "flex items-center md:font-designer"
+        let leftDivClass = "flex items-center font-designer"
         let imageClass = "h-24 me-8"
-        let textClass = "capitalize font-bold text-white text-xl md:text-3xl"
-        let rightDivClass = "w-full md:block md:w-auto"
+        let textClass = "capitalize font-bold text-white  md:text-3xl"
+        let rightDivClass = "font-designer w-full md:block md:w-auto"
         let ulClass = "font-bold flex flex-col p-4 mt-4 border rounded-lg bg-blue-900 border-gray-400" +
             "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
         let liClass = "block py-2 px-3 bg-blue-900 rounded text-white hover:bg-blue-950 md:p-2 md:bg-transparent"

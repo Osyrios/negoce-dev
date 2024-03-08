@@ -1,5 +1,5 @@
 export function MainTitle({title}) {
-    return <div className="text-center font-designer py-5 md:text-start lg:mb-16 lg:mt-8 flex flex-row justify-center">
+    return <div className="text-center font-designer py-5 md:text-start lg:mb-16 lg:mt-8 flex flex-row justify-center text-transparent bg-clip-text bg-gradient-to-b from-blue-900 to-gray-500">
         <h1 className="font-bold text-3xl"> {title} </h1>
     </div>
 }
