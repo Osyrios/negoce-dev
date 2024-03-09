@@ -4,7 +4,7 @@ import logoRappFrance from '../assets/logo company/rappFrance.jpg'
 import logoSeregec from '../assets/logo company/seregec.jpg'
 import {useState} from "react";
 
-export function ProfessionalPath({anchor}) {
+export function ProfessionalPath() {
 
 
     const jobs = [
@@ -52,7 +52,7 @@ export function ProfessionalPath({anchor}) {
         setIsDescriptionDisplayed(!isDescriptionDisplayed)
     }
 
-    return <div className='m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14' id={anchor}>
+    return <div className='m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14'>
 
         <div className="md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
             {jobs.map((job) =>
