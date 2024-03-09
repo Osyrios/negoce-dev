@@ -24,7 +24,7 @@ export function Navbar() {
 
 
     return <>
-        <div className={navClass} id="top">
+        <div className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
                     <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>

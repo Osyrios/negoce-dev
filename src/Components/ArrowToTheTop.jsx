@@ -2,7 +2,7 @@
 export function ArrowToTheTop() {
     return <div className="animate-bounce bg-blue-900 p-2 w-12 h-12 rounded-full flex items-center justify-center fixed bottom-5 right-5 md:bottom-10 md:right-10">
 
-        <a href="#top">
+        <a href="#">
             <svg className="w-8 h-8 text-gray-400"
                  fill="none"
                  strokeLinecap="round"
