@@ -59,7 +59,7 @@ export function SchoolPath()  {
                     <ul className="ms-10 sm:ms-0">
                         <li><span className="underline italic">Diplôme</span> :<br/> {degree.degree}</li>
                         <li><span className="underline italic">Option</span> : {degree.option ? degree.option : 'Aucune'}</li>
-                        <li><span className="underline italic">Date d'obtention</span> : {degree.obtainDate}</li>
+                        <li><span className="underline italic">Année d&apos;obtention</span> : {degree.obtainDate}</li>
                         <li><span className="underline italic">Ecole</span> : {degree.school}</li>
                         <li><span className="underline italic">Ville</span> : {degree.city}</li>
                     </ul>
@@ -68,3 +68,5 @@ export function SchoolPath()  {
     </div>
 
 }
+
+//
