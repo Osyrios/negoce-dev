@@ -14,3 +14,13 @@
 *{
     scroll-behavior: smooth;
 }
+
+.diplomes::before{
+    content: "\2611";
+}
+
+@media(min-width: 1023px) {
+    .diplomes::before{
+        content: "\21D2"
+    }
+}
