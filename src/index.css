@@ -4,23 +4,61 @@
 
 
     @font-face {
-        font-family: 'designerregular';
+        font-family: 'designerRegular';
         src: url('./fonts/designer/designer-webfont.woff2') format('woff2'),
              url('./fonts/designer/designer-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
     }
 
+    @font-face {
+        font-family: 'robotoRegular';
+        src: url('./fonts/roboto/robotoRegular/roboto-regular-webfont.woff2') format('woff2'),
+             url('./fonts/roboto/robotoRegular/roboto-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'robotoItalic';
+        src: url('./fonts/roboto/robotoItalic/roboto-italic-webfont.woff2') format('woff2'),
+             url('./fonts/roboto/robotoItalic/roboto-italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'robotoBold';
+        src: url('./fonts/roboto/robotoBold/roboto-bold-webfont.woff2') format('woff2'),
+             url('./fonts/roboto/robotoBold/roboto-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+
+
+
+
 *{
     scroll-behavior: smooth;
 }
 
 .diplomes::before{
-    content: "\2611";
+    content: url("./assets/mortarboard.svg");
 }
 
 @media(min-width: 1023px) {
     .diplomes::before{
-        content: "\21D2"
+        content: url("./assets/mortarboard.svg");
     }
+}
+
+.cardSchool{
+    border-radius: 1.625rem;
+}
+
+.validateMark{
+    width: 70px;
+    rotate: 10deg;
 }

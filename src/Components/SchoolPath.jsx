@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-
+import validateMark from '../assets/validateMark.png'
 export function SchoolPath()  {
 
 
@@ -52,17 +52,22 @@ export function SchoolPath()  {
     }, [screenWidth])
 
 
-    return <div className="flex flex-col sm:items-center lg:flex-row lg:items-start">
+    return <div className="flex flex-col sm:items-center lg:flex-row lg:items-start lg:justify-center font-robotoRegular">
             {degrees.map((degree)=>
-                <div key={degree.degree} className="text-wrap mx-9 my-10 sm:w-1/3 sm:flex sm:flex-row sm:items-center sm:gap-5 lg:mx-2">
-                    <p className="diplomes text-center"></p>
-                    <ul className="ms-10 sm:ms-0">
-                        <li><span className="underline italic">Diplôme</span> :<br/> {degree.degree}</li>
-                        <li><span className="underline italic">Option</span> : {degree.option ? degree.option : 'Aucune'}</li>
-                        <li><span className="underline italic">Année d&apos;obtention</span> : {degree.obtainDate}</li>
-                        <li><span className="underline italic">Ecole</span> : {degree.school}</li>
-                        <li><span className="underline italic">Ville</span> : {degree.city}</li>
-                    </ul>
+                <div key={degree.degree} className="cardSchool mx-9 my-10 p-0.5 bg-gradient-to-br from-blue-600 to-yellow-400 hover:scale-105 transition ease-in-out delay-75 duration-200 sm:flex sm:flex-row sm:items-center sm:gap-7 lg:mx-2">
+                    <div className="relative rounded-3xl p-3 text-wrap bg-gray-400">
+                        <img src={validateMark}
+                             alt="image d'un tick vert de validation"
+                             className="validateMark absolute -top-4 -right-5 z-30"/>
+                        <p className="diplomes text-center"></p>
+                        <ul className="ms-10 sm:ms-0">
+                            <li><span className="underline font-robotoItalic">Diplôme</span> :<br/> {degree.degree}</li>
+                            <li><span className="underline font-robotoItalic">Option</span> : {degree.option ? degree.option : 'Aucune'}</li>
+                            <li><span className="underline font-robotoItalic">Année d&apos;obtention</span> : {degree.obtainDate}</li>
+                            <li><span className="underline font-robotoItalic">Ecole</span> : {degree.school}</li>
+                            <li><span className="underline font-robotoItalic">Ville</span> : {degree.city}</li>
+                        </ul>
+                    </div>
                 </div>
             )}
     </div>

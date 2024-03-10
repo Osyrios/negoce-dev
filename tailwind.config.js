@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     fontFamily:{
-      'designer':['designerregular']
+      'designer':['designerRegular'],
+      'robotoRegular':['robotoRegular'],
+      'robotoItalic':['robotoItalic'],
+      'robotoBold':['robotoBold']
     },
   },
   plugins: [],

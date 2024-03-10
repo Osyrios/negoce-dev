@@ -57,7 +57,7 @@ export function ProfessionalPath() {
         <div className="md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
             {jobs.map((job) =>
                 <div className='flex flex-col items-center my-2 ' key={job.company}>
-                    <div className=' hover:underline hover:font-bold flex flex-col justify-end hover:animate-bounce'>
+                    <div className=' hover:underline hover:font-robotoBold font-robotoRegular flex flex-col justify-end hover:animate-bounce'>
                         <img src={job.logo} alt="logo d'entreprise" className="w-6/12 md:w-10/12 self-center hover:opacity-80 rounded-full" />
                         <div className='flex flex-row justify-between'>
                             <time>{job.start}</time>
@@ -65,8 +65,8 @@ export function ProfessionalPath() {
                         </div>
                     </div>
                     <div className={isDescriptionDisplayed ? 'my-4 border-t-4 border-blue-900 text-sm' : 'hidden'}>
-                        <ul>
-                            <li className="italic text-center pt-1">{job.company}</li>
+                        <ul className="font-robotoRegular">
+                            <li className="font-robotoItalic text-center pt-1">{job.company}</li>
                             <li className="pt-1"><span className="underline">Secteur</span> :<br/>{job.sector}</li>
                             <li className="pt-1"><span className="underline">Poste</span> :<br/>{job.position}</li>
                             <li></li>
@@ -76,7 +76,7 @@ export function ProfessionalPath() {
             )}
         </div>
 
-        <div className="m-0 p-0 italic">
+        <div className="m-0 p-0 font-robotoItalic">
             <input type="checkbox"
                    id="description"
                    name="description"
