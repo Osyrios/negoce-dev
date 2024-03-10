@@ -4,11 +4,11 @@ import {useState} from "react";
 // eslint-disable-next-line react/prop-types
 export function Navbar() {
 
-        let navClass = "bg-blue-900 "
-        let globalDivClass = "flex flex-col flex-wrap justify-center items-center mx-auto p-4 xl:max-w-screen xl:flex-row xl:justify-between md:px-16"
+        let navClass = "bg-blue-900 w-full"
+        let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto p-4 max-w-screen xl:flex-row xl:justify-between md:px-16"
         let leftDivClass = "flex items-center font-designer"
-        let imageClass = "h-24 me-8"
-        let textClass = "capitalize font-bold text-white  md:text-3xl"
+        let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
+        let textClass = "capitalize font-bold text-white invisible md:visible  md:text-3xl"
         let rightDivClass = "font-designer w-full md:block md:w-auto"
         let ulClass = "font-bold flex flex-col p-4 mt-4 border rounded-lg bg-blue-900 border-gray-400" +
             "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
@@ -53,24 +53,24 @@ export function Navbar() {
                     <ul className={ulClass}>
                         <li>
                             <a href="#"
-                               className={liClass}>Accueil</a>
+                               className={liClass} onClick={openMenu}>Accueil</a>
                         </li>
                         <li>
                             <a href="#aboutMe"
-                               className={liClass}>A propos</a>
+                               className={liClass} onClick={openMenu}>A propos</a>
                         </li>
                         <li>
-                            <a href="#path"
-                               className={liClass}>Mon parcours</a>
+                            <a href="#projects"
+                               className={liClass} onClick={openMenu}>Mes projets</a>
                         </li>
 
                         <li>
-                            <a href="#projects"
-                               className={liClass}>Mes projets</a>
+                            <a href="#path"
+                               className={liClass} onClick={openMenu}>Mon parcours</a>
                         </li>
                         <li>
                             <a href="#contacts"
-                               className={liClass}>Contacts</a>
+                               className={liClass} onClick={openMenu}>Contacts</a>
                         </li>
                     </ul>
                 </div>

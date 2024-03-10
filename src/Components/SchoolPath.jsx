@@ -52,9 +52,9 @@ export function SchoolPath()  {
     }, [screenWidth])
 
 
-    return <div className="flex flex-col sm:items-center lg:flex-row lg:items-start lg:justify-center font-robotoRegular">
+    return <div className="flex flex-col sm:items-center lg:flex-row lg:items-start lg:justify-evenly font-robotoRegular">
             {degrees.map((degree)=>
-                <div key={degree.degree} className="cardSchool mx-9 my-10 p-0.5 bg-gradient-to-br from-blue-600 to-yellow-400 hover:scale-105 transition ease-in-out delay-75 duration-200 sm:flex sm:flex-row sm:items-center sm:gap-7 lg:mx-2">
+                <div key={degree.degree} className="customCards mx-9 my-10 p-0.5 shadow-lg shadow-blue-600 hover:shadow-yellow-100 bg-gradient-to-br from-blue-600 to-yellow-400 hover:scale-105 transition ease-in-out delay-75 duration-200 sm:flex sm:flex-row sm:items-center sm:gap-7 lg:mx-2">
                     <div className="relative rounded-3xl p-3 text-wrap bg-gray-400">
                         <img src={validateMark}
                              alt="image d'un tick vert de validation"
