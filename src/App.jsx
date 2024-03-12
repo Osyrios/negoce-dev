@@ -7,7 +7,7 @@ function App() {
   return <div className="bg-gray-400">
     <Navbar />
     <Body />
-    <Footer/>
+    <Footer anchor={"contacts"}/>
   </div>
 
 }

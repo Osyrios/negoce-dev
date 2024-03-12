@@ -4,7 +4,7 @@ import phone from '../../assets/social/phone.png'
 import githubWhite from '../../assets/social/whiteGithub.png'
 
 
-export function Footer(){
+export function Footer({anchor}){
 
     const socials = [
         {
@@ -31,7 +31,7 @@ export function Footer(){
 
 
 
-    return <div className="bg-blue-900 shadow flex-col items-center">
+    return <div className="bg-blue-900 shadow flex-col items-center" id={anchor}>
         <h1 className="font-designer text-gray-400 text-center text-2xl py-4">Me contacter</h1>
         <div className="flex flex-col md:flex-row md:w-auto justify-center items-center m-auto pb-8 pt-2 ">
             {socials.map((social) =>
