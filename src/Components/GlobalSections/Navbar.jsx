@@ -17,7 +17,7 @@ export function Navbar() {
     })
 
 
-    let navClass = "bg-blue-900 w-full md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
+    let navClass = "bg-blue-900 w-full p-4 md:p-2 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
     let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto px-4 max-w-screen xl:flex-row xl:justify-between md:px-16"
     let leftDivClass = "flex items-center font-designer"
     let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
