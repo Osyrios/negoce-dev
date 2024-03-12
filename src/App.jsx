@@ -1,25 +1,17 @@
 import {Navbar} from "./Components/GlobalSections/Navbar.jsx";
 import {Body} from "./Components/GlobalSections/Body.jsx"
 import {Footer} from "./Components/GlobalSections/Footer.jsx";
-//import {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
+
 function App() {
 
-/*Scroll tracker for navbar changes
-    const [scroll, setScroll] = useState(0)
-    useEffect(()=>{
-        const handler = () =>{
-            setScroll(window.scrollY)
-        }
-        window.addEventListener('scroll', handler)
-        return ()=>{
-            removeEventListener('scroll', handler)
-        }
-    })
-  */
+//Scroll tracker for navbar changes
 
-  return <div>
+
+
+  return <div className="bg-gray-400">
     <Navbar />
-    <Body scroll={scroll}/>
+    <Body />
     <Footer/>
   </div>
 
