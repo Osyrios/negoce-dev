@@ -5,6 +5,7 @@ import {ProfessionalPath} from "../ProfessionalPath.jsx";
 import {SchoolPath} from "../SchoolPath.jsx";
 import {ArrowToTheTop} from "../ArrowToTheTop.jsx";
 import {Projects} from "../Projects.jsx";
+import {Skills} from "../Skills.jsx";
 
 // eslint-disable-next-line react/prop-types
 export function Body(){
@@ -16,6 +17,7 @@ export function Body(){
                 <SectionTitle title={"Qui suis-je ?"} anchor={'aboutMe'}/>
                 <AboutMe/>
                 <SectionTitle title={"Mes compétences"}/>
+                <Skills/>
                 <SectionTitle title={"Mes projets"} anchor={'projects'}/>
                 <Projects/>
                 <SectionTitle title={"Mon Parcours"} anchor={'path'} />
