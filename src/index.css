@@ -48,15 +48,24 @@
     content: url("./assets/mortarboard.svg");
 }
 
-@media(min-width: 1023px) {
-    .diplomes::before{
-        content: url("./assets/mortarboard.svg");
-    }
-}
-
 .customCards{
     border-radius: 1.625rem;
 }
+
+
+@media(min-width: 641px) {
+
+    .customCardsContent{
+        width: 400px;
+    }
+}
+
+@media(min-width: 1730px) {
+    .customCardsContent{
+        width: 500px;
+    }
+}
+
 
 .validateMark{
     width: 70px;

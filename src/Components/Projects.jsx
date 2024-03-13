@@ -37,7 +37,7 @@ export function Projects(){
     return <div className="flex flex-col flex-wrap sm:items-center lg:flex-row lg:items-start lg:justify-evenly font-robotoRegular">
             {projectList.map((project)=>
                 <div key={project.name} className="customCards  mx-9 my-10 p-0.5 shadow-lg shadow-blue-600 hover:shadow-green-800 bg-gradient-to-br from-blue-600 to-green-400 hover:scale-105 delay-75 duration-200 sm:flex sm:flex-row sm:items-center sm:gap-7 lg:mx-2">
-                    <div className="rounded-3xl p-3 text-wrap bg-gray-400">
+                    <div className="customCardsContent rounded-3xl p-3 text-wrap bg-gray-400">
                         <p className="text-center"></p>
                         <ul className="ms-10 sm:ms-0">
                             <li><span className="underline font-robotoItalic">Nom</span> :<br/> <span className="ps-4">{project.name}</span></li>
