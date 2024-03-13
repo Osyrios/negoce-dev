@@ -34,8 +34,6 @@ export function Navbar() {
             setIsMenuOpen(!isMenuOpen)
     }
 
-
-
     return <>
         <div className=/*{scroll > 1 ? navClassFixed : navClass}*/{navClass}>
             <div className={globalDivClass}>

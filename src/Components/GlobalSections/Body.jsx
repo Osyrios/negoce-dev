@@ -22,6 +22,7 @@ export function Body(){
                 <ProfessionalPath/>
                 <SectionTitle title={"Formations"}/>
                 <SchoolPath/>
+                {/*Mettre les id dans des div ici ?? */}
             </div>
         </div>
 }
