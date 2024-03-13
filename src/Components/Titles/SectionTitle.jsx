@@ -6,5 +6,4 @@ export function SectionTitle({title, anchor}) {
             {title}
         </h2>
     </>
-
 }

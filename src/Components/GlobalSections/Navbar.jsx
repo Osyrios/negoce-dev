@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 // eslint-disable-next-line react/prop-types
 export function Navbar() {
-
+/*
     const [scroll, setScroll] = useState(0)
 
     useEffect(()=>{
@@ -14,12 +14,12 @@ export function Navbar() {
         return ()=>{
             removeEventListener('scroll', handler)
         }
-    })
+    })*/
 
 
     let navClass = "bg-blue-900 w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
     let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto px-4 max-w-screen xl:flex-row xl:justify-between md:px-16"
-    let leftDivClass = "flex items-center font-designer"
+    let leftDivClass = "flex items-center font-designer md:hidden xl:flex"
     let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
     let textClass = "capitalize font-bold text-white invisible md:visible  md:text-2xl"
     let rightDivClass = "font-designer w-full mb-2 md:mb-0 md:block md:w-auto"
@@ -35,7 +35,7 @@ export function Navbar() {
     }
 
     return <>
-        <div className=/*{scroll > 1 ? navClassFixed : navClass}*/{navClass}>
+        <div className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
                     <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
@@ -61,6 +61,7 @@ export function Navbar() {
 
 
                 <div className={`${rightDivClass} ${!isMenuOpen ? '' : 'hidden'}`}>
+
                     <ul className={ulClass}>
                         <li>
                             <a href="#"
