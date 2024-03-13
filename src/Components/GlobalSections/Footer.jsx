@@ -6,21 +6,19 @@ import githubWhite from '../../assets/social/whiteGithub.png'
 
 export function Footer({anchor}){
 
-    const mail = "mailto:yassine.n13@gmail.com"
-    const tel = "tel:+33649636791"
 
 
     const socials = [
         {
             "name":"yassine.n13@gmail.com",
             "logo": email,
-            "link":{mail},
+            "link":"mailto:yassine.n13@gmail.com",
             "blank": ""
         },
         {
             "name":"06.49.63.67.91",
             "logo": phone,
-            "link":{tel},
+            "link":"tel:+33649636791",
             "blank": ""
         },
         {
