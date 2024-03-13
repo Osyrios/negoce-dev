@@ -41,7 +41,7 @@ export function Skills(){
             </div>
         </div>
         <div className="pt-5 flex flex-col items-center">
-            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Mon
+            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Mes
                 interets</h5>
             <div className="grid grid-cols-2 gap-1 place-items-center mb-5 pt-2" >
                 <img src={djangoLogo} alt="Logo Django" className={logoStyle}/>
