@@ -17,7 +17,7 @@ export function Projects(){
         {
             "name" : "Karmine",
             "stack" : ["HTML", "CSS"],
-            "link" : "",
+            "link" : "https://negoce-dev-karmine.netlify.app/",
             "context" : "Copie du site Karmine.fr en utilisant uniquement HTML et CSS"
         },
         {
