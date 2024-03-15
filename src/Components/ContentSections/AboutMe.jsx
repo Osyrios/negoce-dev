@@ -1,4 +1,4 @@
-import photoYassine from '../assets/photo-yassine.jpeg'
+import photoYassine from '../../assets/photos/photo-yassine.jpeg'
 
 export function AboutMe(){
     return <>

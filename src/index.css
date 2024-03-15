@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+    /* FONTS SETTINGS */
     @font-face {
         font-family: 'designerRegular';
         src: url('./fonts/designer/designer-webfont.woff2') format('woff2'),
@@ -35,39 +35,35 @@
         font-style: normal;
     }
 
+    /* MEDIA QUERIES */
+    @media(min-width: 641px) {
 
-
-
-
-
-*{
-    scroll-behavior: smooth;
-}
-
-.diplomes::before{
-    content: url("./assets/mortarboard.svg");
-}
-
-.customCards{
-    border-radius: 1.625rem;
-}
-
-
-@media(min-width: 641px) {
-
-    .customCardsContent{
-        width: 400px;
+        .customCardsContent{
+            width: 400px;
+        }
     }
-}
 
-@media(min-width: 1730px) {
-    .customCardsContent{
-        width: 500px;
+    @media(min-width: 1730px) {
+        .customCardsContent{
+            width: 500px;
+        }
     }
-}
+
+    /* PERSONNAL STYLE */
+    *{
+        scroll-behavior: smooth;
+    }
+
+    .diplomes::before{
+        content: url("assets/pictos/mortarboard.svg");
+    }
+
+    .customCards{
+        border-radius: 1.625rem;
+    }
 
 
-.validateMark{
-    width: 70px;
-    rotate: 10deg;
-}
+    .validateMark{
+        width: 70px;
+        rotate: 10deg;
+    }

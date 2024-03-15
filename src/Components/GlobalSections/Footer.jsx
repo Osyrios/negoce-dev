@@ -6,8 +6,6 @@ import githubWhite from '../../assets/social/whiteGithub.png'
 
 export function Footer({anchor}){
 
-
-
     const socials = [
         {
             "name":"yassine.n13@gmail.com",
@@ -34,8 +32,6 @@ export function Footer({anchor}){
             "blank": "_blank"
         }
     ]
-
-
 
     return <div className="bg-blue-900 shadow flex-col items-center" id={anchor}>
         <h1 className="font-designer text-gray-400 text-center text-2xl py-4">Me contacter</h1>

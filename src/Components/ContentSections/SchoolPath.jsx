@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import validateMark from '../assets/validateMark.png'
+import validateMark from '../../assets/pictos/validateMark.png'
 export function SchoolPath()  {
 
 

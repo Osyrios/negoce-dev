@@ -1,21 +1,8 @@
 import logo from '../../assets/logo/logotransparentwhite.png'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
-// eslint-disable-next-line react/prop-types
+
 export function Navbar() {
-/*
-    const [scroll, setScroll] = useState(0)
-
-    useEffect(()=>{
-        const handler = () =>{
-            setScroll(window.scrollY)
-        }
-        window.addEventListener('scroll', handler)
-        return ()=>{
-            removeEventListener('scroll', handler)
-        }
-    })*/
-
 
     let navClass = "bg-blue-900 w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
     let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto px-4 max-w-screen xl:flex-row xl:justify-between md:px-16"

@@ -1,7 +1,7 @@
-import logoGroupM from '../assets/logo company/groupM.png'
-import logoFocus from '../assets/logo company/FocusEntertainment.png'
-import logoRappFrance from '../assets/logo company/rappFrance.jpg'
-import logoSeregec from '../assets/logo company/seregec.jpg'
+import logoGroupM from '../../assets/logo company/groupM.png'
+import logoFocus from '../../assets/logo company/FocusEntertainment.png'
+import logoRappFrance from '../../assets/logo company/rappFrance.jpg'
+import logoSeregec from '../../assets/logo company/seregec.jpg'
 import {useState} from "react";
 
 export function ProfessionalPath() {

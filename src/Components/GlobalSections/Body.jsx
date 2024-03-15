@@ -1,13 +1,12 @@
-import {AboutMe} from "../AboutMe.jsx";
+import {AboutMe} from "../ContentSections/AboutMe.jsx";
 import {MainTitle} from "../Titles/MainTitle.jsx";
 import {SectionTitle} from "../Titles/SectionTitle.jsx";
-import {ProfessionalPath} from "../ProfessionalPath.jsx";
-import {SchoolPath} from "../SchoolPath.jsx";
-import {ArrowToTheTop} from "../ArrowToTheTop.jsx";
-import {Projects} from "../Projects.jsx";
-import {Skills} from "../Skills.jsx";
+import {ProfessionalPath} from "../ContentSections/ProfessionalPath.jsx";
+import {SchoolPath} from "../ContentSections/SchoolPath.jsx";
+import {ArrowToTheTop} from "../ContentSections/ArrowToTheTop.jsx";
+import {Projects} from "../ContentSections/Projects.jsx";
+import {Skills} from "../ContentSections/Skills.jsx";
 
-// eslint-disable-next-line react/prop-types
 export function Body(){
 
     return <div className="h-auto bg-gray-400">
