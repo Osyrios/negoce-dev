@@ -30,7 +30,7 @@ export function AboutMe(){
                         </p>
 
                         <p className="pb-3">
-                            Me voilà donc titulaire d&apos;un et en pleine recherche d&apos;opportunités !<br/>
+                            Me voilà donc titulaire d&apos;un bachelor et en pleine recherche d&apos;opportunités !<br/>
                             En attendant, je continue de m&apos;exercer et j&apos;ajouterais au fur et à mesure mes projets à ce site !
                         </p>
 
