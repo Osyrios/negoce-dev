@@ -6,10 +6,10 @@ export default {
   ],
   theme: {
     fontFamily:{
-      'designer':['designerRegular'],
-      'robotoRegular':['robotoRegular'],
-      'robotoItalic':['robotoItalic'],
-      'robotoBold':['robotoBold']
+      'designer':['designerRegular','Georgia'],
+      'robotoRegular':['robotoRegular', 'Georgia'],
+      'robotoItalic':['robotoItalic','Georgia'],
+      'robotoBold':['robotoBold','Georgia']
     },
   },
   plugins: [],
