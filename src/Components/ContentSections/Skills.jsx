@@ -13,6 +13,8 @@ import sqlLogo from '../../assets/technologies/sql.png'
 import tailwindcssLogo from '../../assets/technologies/tailwindcss.png'
 import vuejsLogo from '../../assets/technologies/vuejs.png'
 import angular from '../../assets/technologies/angular.png'
+import wordpress from '../../assets/technologies/wordpress.png'
+import shopify from '../../assets/technologies/shopify.png'
 export function Skills(){
     const logoStyle = 'h-20 '
 
@@ -25,7 +27,7 @@ export function Skills(){
                 <img src={cssLogo} alt="logo CSS" className={logoStyle}/>
                 <img src={jsLogo} alt="Logo Javascript" className={logoStyle}/>
                 <img src={phpLogo} alt="Logo PHP" className={logoStyle}/>
-                <img src={pythonLogo} alt="Logo Python" className={logoStyle + 'col-span-2'}/>
+                <img src={pythonLogo} alt="Logo Python" className={logoStyle}/>
                 <img src={sqlLogo} alt="Logo SQL" className={logoStyle}/>
                 <img src={gitLogo} alt="Logo Git" className={logoStyle}/>
                 <img src={flaskLogo} alt="Logo Flask" className={logoStyle}/>
@@ -48,6 +50,8 @@ export function Skills(){
                 <img src={angular} alt="Logo AngularJS" className={logoStyle}/>
                 <img src={djangoLogo} alt="Logo Django" className={logoStyle}/>
                 <img src={vuejsLogo} alt="Logo VueJs" className={logoStyle}/>
+                <img src={wordpress} alt="Logo Wordpress" className={logoStyle}/>
+                <img src={shopify} alt="Logo Shopify" className={logoStyle}/>
             </div>
         </div>
     </div>
