@@ -5,7 +5,7 @@ export function Projects(){
         {
             "name" : "Negoce-Dev",
             "stack" : ["REACT", "HTML","CSS","JS", "Tailwind"],
-            "link" : "#",
+            "link" : "https://negoce-dev.com",
             "context" : "Portfolio (site actuel)"
         },
         {
