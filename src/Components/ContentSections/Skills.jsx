@@ -19,7 +19,7 @@ import {useInView} from "react-intersection-observer";
 export function Skills(){
 
     const { ref, inView, entry } = useInView({
-        threshold: 0.3,
+        threshold: 0.1,
         onChange: (inView, entry) => {
             if (inView){
                 entry.target.classList.add('reveal-visible')
