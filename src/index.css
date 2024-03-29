@@ -52,7 +52,11 @@
     /* PERSONNAL STYLE */
     *{
         scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #1E3A8A #9CA3AF;
+        scrollbar-gutter: both-edges;
     }
+
 
     .diplomes::before{
         content: url("assets/pictos/mortarboard.svg");
