@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import validateMark from '../../assets/pictos/validateMark.png'
+import {useInView} from "react-intersection-observer";
 export function SchoolPath()  {
 
 
@@ -51,8 +52,17 @@ export function SchoolPath()  {
         setDegrees(sortedDegrees)
     }, [screenWidth])
 
+    const { ref, inView, entry } = useInView({
+        threshold: 0.2,
+        onChange: (inView, entry) => {
+            if (inView){
+                entry.target.classList.add('reveal-visible')
+            }
+         },
+      });
 
-    return <div className="flex flex-col sm:items-center lg:flex-row lg:items-start lg:justify-evenly font-robotoRegular">
+
+    return <div ref={ref} className="reveal flex flex-col sm:items-center lg:flex-row lg:items-start lg:justify-evenly font-robotoRegular">
             {degrees.map((degree)=>
                 <div key={degree.degree} className="customCards mx-9 my-10 p-0.5 shadow-lg shadow-blue-600 hover:shadow-yellow-100 bg-gradient-to-br from-blue-600 to-yellow-400 hover:scale-105 transition ease-in-out delay-75 duration-200 sm:flex sm:flex-row sm:items-center sm:gap-7 lg:mx-2">
                     <div className="relative rounded-3xl p-3 text-wrap bg-gray-400">

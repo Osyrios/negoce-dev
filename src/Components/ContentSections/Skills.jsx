@@ -15,10 +15,22 @@ import vuejsLogo from '../../assets/technologies/vuejs.png'
 import angular from '../../assets/technologies/angular.png'
 import wordpress from '../../assets/technologies/wordpress.png'
 import shopify from '../../assets/technologies/shopify.png'
+import {useInView} from "react-intersection-observer";
 export function Skills(){
+
+    const { ref, inView, entry } = useInView({
+        threshold: 0.3,
+        onChange: (inView, entry) => {
+            if (inView){
+                entry.target.classList.add('reveal-visible')
+            }
+         },
+      });
+
+
     const logoStyle = 'h-20 '
 
-    return <div className="mx-7 mt-6">
+    return <div ref={ref} className="reveal mx-7 mt-6">
         <div className="pt-5 flex flex-col items-center">
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Technos
                 pratiquées</h5>

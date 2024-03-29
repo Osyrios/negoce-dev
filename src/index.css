@@ -67,3 +67,31 @@
         width: 70px;
         rotate: 10deg;
     }
+
+    .reveal-navbar{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .reveal{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    .reveal-minus-x{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    .reveal-x{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    .reveal-visible{
+        opacity: 1;
+        transform: translateY(0);
+        transition: 1s cubic-bezier(.7,.17,.48,.97);
+    }
+
+

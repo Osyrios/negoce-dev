@@ -3,9 +3,18 @@ import logoFocus from '../../assets/logo company/FocusEntertainment.png'
 import logoRappFrance from '../../assets/logo company/rappFrance.jpg'
 import logoSeregec from '../../assets/logo company/seregec.jpg'
 import {useState} from "react";
+import {useInView} from "react-intersection-observer";
 
 export function ProfessionalPath() {
 
+    const { ref, inView, entry } = useInView({
+        threshold: 0.2,
+        onChange: (inView, entry) => {
+            if (inView){
+                entry.target.classList.add('reveal-visible')
+            }
+         },
+      });
 
     const jobs = [
         {
@@ -52,7 +61,7 @@ export function ProfessionalPath() {
         setIsDescriptionDisplayed(!isDescriptionDisplayed)
     }
 
-    return <div className='m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14'>
+    return <div ref={ref} className='reveal-minus-x m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14'>
 
         <div className="md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
             {jobs.map((job) =>

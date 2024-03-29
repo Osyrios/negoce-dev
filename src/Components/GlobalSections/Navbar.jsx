@@ -1,10 +1,11 @@
 import logo from '../../assets/logo/logotransparentwhite.png'
 import {useState} from "react";
+import {useInView} from "react-intersection-observer";
 
 
 export function Navbar() {
 
-    let navClass = "bg-blue-900 w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
+    let navClass = "reveal-navbar bg-blue-900 w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
     let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto px-4 max-w-screen xl:flex-row xl:justify-between md:px-16"
     let leftDivClass = "flex items-center font-designer md:hidden xl:flex"
     let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
@@ -21,8 +22,21 @@ export function Navbar() {
             setIsMenuOpen(!isMenuOpen)
     }
 
+
+     const { ref, inView, entry } = useInView({
+        threshold: 0.2,
+        onChange: (inView, entry) => {
+            if (inView){
+                entry.target.classList.add('reveal-visible')
+            }
+         },
+      });
+
+
+
+
     return <>
-        <div className={navClass}>
+        <div ref={ref} className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
                     <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
