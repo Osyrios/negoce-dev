@@ -10,8 +10,8 @@ export function Navbar() {
     let leftDivClass = "flex items-center font-designer md:hidden xl:flex"
     let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
     let textClass = "capitalize font-bold text-white invisible md:visible  md:text-2xl"
-    let rightDivClass = "font-designer w-full mb-2 md:mb-0 md:block md:w-auto"
-    let ulClass = "font-bold flex flex-col p-4 mt-4 border rounded-lg bg-blue-900 border-gray-400" +
+    let rightDivClass = "bg-blue-900 font-designer rounded-b-lg w-full mt-4 md:mb-0 md:block md:w-auto"
+    let ulClass = "font-bold flex flex-col p-4 mt-0 pt-0 border rounded-lg bg-blue-900 border-gray-400" +
         "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
     let liClass = "block py-2 px-3 bg-blue-900 rounded text-white hover:bg-blue-950 md:p-2 md:bg-transparent"
 
@@ -60,8 +60,7 @@ export function Navbar() {
                     </svg>
                 </button>
 
-
-                <div className={`${rightDivClass} ${!isMenuOpen ? '' : 'hidden'}`}>
+                <div className={`${rightDivClass} ${!isMenuOpen ? 'reveal-dropdown-open' : 'reveal-dropdown'}`}>
 
                     <ul className={ulClass}>
                         <li>
@@ -87,8 +86,10 @@ export function Navbar() {
                         </li>
                     </ul>
                 </div>
+
             </div>
         </div>
+
     </>
 }
 

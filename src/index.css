@@ -98,4 +98,20 @@
         transition: 1s cubic-bezier(.7,.17,.48,.97);
     }
 
+    .reveal-dropdown{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 1s cubic-bezier(.7,.17,.48,.97), transform 1s cubic-bezier(.7,.17,.48,.97);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+    .reveal-dropdown-open{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 1s cubic-bezier(.7,.17,.48,.97), transform 1s cubic-bezier(.7,.17,.48,.97);
+    }
 
