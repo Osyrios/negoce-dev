@@ -89,7 +89,7 @@
 
     .reveal-x{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(-100px);
     }
 
     .reveal-visible{
@@ -101,7 +101,7 @@
     .reveal-dropdown{
         visibility: hidden;
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateY(-50%);
         transition: opacity 1s cubic-bezier(.7,.17,.48,.97), transform 1s cubic-bezier(.7,.17,.48,.97);
         position: absolute;
         top: 100%;
