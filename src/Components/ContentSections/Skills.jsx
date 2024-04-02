@@ -15,6 +15,7 @@ import vuejsLogo from '../../assets/technologies/vuejs.png'
 import angular from '../../assets/technologies/angular.png'
 import wordpress from '../../assets/technologies/wordpress.png'
 import shopify from '../../assets/technologies/shopify.png'
+import negoceCv from '../../assets/NEGOCE_YASSINE_CV.pdf'
 import {useInView} from "react-intersection-observer";
 export function Skills(){
 
@@ -31,6 +32,9 @@ export function Skills(){
     const logoStyle = 'h-20 '
 
     return <div ref={ref} className="reveal mx-7 mt-6">
+        <div className="text-center font-robotoItalic underline animate-pulse text-blue-800  hover:scale-110">
+            <a href={negoceCv} target='_blank' className="hover:drop-shadow">Télécharger mon cv !</a>
+        </div>
         <div className="pt-5 flex flex-col items-center">
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Technos
                 pratiquées</h5>
