@@ -6,9 +6,22 @@ import {SchoolPath} from "../ContentSections/SchoolPath.jsx";
 import {ArrowToTheTop} from "../ContentSections/ArrowToTheTop.jsx";
 import {Projects} from "../ContentSections/Projects.jsx";
 import {Skills} from "../ContentSections/Skills.jsx";
+import {useEffect} from "react";
+import {observer} from "../tools/observer.js";
 
 
 export function Body(){
+
+
+    /*useEffect(()=>{
+    document.querySelectorAll('.appearFromRight.appearFromLeft.appearFromTop.appearFromBottom')
+        .forEach((r)=>{
+            observer.observe(r)
+    })
+
+    },[])*/
+
+
 
     return <div className="h-auto bg-gray-400">
             <div className="mx-2 p-2 md:mx-32 md:p-4 xl:mx-52 xl:p-8">

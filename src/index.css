@@ -110,3 +110,37 @@
         transform: translateY(0);
         transition: opacity 1s cubic-bezier(.7,.17,.48,.97), transform 1s cubic-bezier(.7,.17,.48,.97);
     }
+
+
+
+    .appearFromRight{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    .appearFromLeft{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    .appearFromTop{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    .appearFromBottom{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    .appearX{
+        opacity: 1;
+        transform: translateX(0);
+        transition: 1.5s cubic-bezier(.7,.17,.48,.97);
+    }
+
+    .appearY{
+        opacity: 1;
+        transform: translateY(0);
+        transition: 1.5s cubic-bezier(.7,.17,.48,.97);
+    }
