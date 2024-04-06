@@ -1,26 +1,26 @@
 import photoYassine from '../../assets/photos/photo-yassine.jpeg'
-import {useInView} from "react-intersection-observer";
+import {observer} from "../tools/observer.js";
+import {useEffect} from "react";
+
 
 export function AboutMe(){
 
-         const { ref, inView, entry } = useInView({
-            threshold: 0.2,
-            onChange: (inView, entry) => {
-                if (inView){
-                    entry.target.classList.add('reveal-visible')
-                }
-             },
-          });
 
+     useEffect(()=>{
+        document.querySelectorAll('.appearFromTop, .appearFromRight, .appearFromBottom, .appearFromLeft')
+            .forEach((t)=>{
+                observer.observe(t)
+            })
+        },[])
 
 
     return <>
-        <div ref={ref} className="reveal flex flex-col justify-center items-center gap-5 mt-5 mb-16 mx-7 md:mx-0 md:justify-start md:gap-9 md:mt-16 md:mb-32 lg:flex-row xl:gap-32 font-robotoRegular">
+        <div className=" flex flex-col justify-center items-center gap-5 mt-5 mb-16 mx-7 md:mx-0 md:justify-start md:gap-9 md:mt-16 md:mb-32 lg:flex-row xl:gap-32 font-robotoRegular">
                 <img src={photoYassine}
                      alt="image avec le logo YN"
-                     className=" ellip rounded-full mt-4 h-1/3 w-1/3 text-center md:h-2/6 md:w-2/6 lg:h-2/5 lg:w-2/5 xl:h-1/5 xl:w-1/5 xl:ms-10"
+                     className="appearFromRight ellip rounded-full mt-4 h-1/3 w-1/3 text-center md:h-2/6 md:w-2/6 lg:h-2/5 lg:w-2/5 xl:h-1/5 xl:w-1/5 xl:ms-10"
                 />
-            <div className="flex flex-col items-center xl:w-1/2">
+            <div className="appearFromBottom flex flex-col items-center xl:w-1/2">
                     <h2 className=" font-robotoBold mb-3 text-lg"> Bienvenue sur mon portfolio en ligne !</h2>
                     <div className="py-2 text-justify text-sm">
 

@@ -16,26 +16,24 @@ import angular from '../../assets/technologies/angular.png'
 import wordpress from '../../assets/technologies/wordpress.png'
 import shopify from '../../assets/technologies/shopify.png'
 import negoceCv from '../../assets/NEGOCE_YASSINE_CV.pdf'
-import {useInView} from "react-intersection-observer";
+import {useEffect} from "react";
+import {observer} from "../tools/observer.js";
 export function Skills(){
 
-    const { ref, inView, entry } = useInView({
-        threshold: 0.1,
-        onChange: (inView, entry) => {
-            if (inView){
-                entry.target.classList.add('reveal-visible')
-            }
-         },
-      });
-
+    useEffect(()=>{
+        document.querySelectorAll('.appearFromTop, .appearFromRight, .appearFromBottom, .appearFromLeft')
+            .forEach((t)=>{
+                observer.observe(t)
+            })
+        },[])
 
     const logoStyle = 'h-20 '
 
-    return <div ref={ref} className="reveal mx-7 mt-6">
-        <div className="text-center font-robotoItalic underline animate-pulse text-blue-800  hover:scale-110">
+    return <div className="mx-7 mt-6">
+        <div className="appearFromRight text-center font-robotoBold underline animate-pulse text-red-600  hover:scale-110">
             <a href={negoceCv} target='_blank' className="hover:drop-shadow">Télécharger mon cv !</a>
         </div>
-        <div className="pt-5 flex flex-col items-center">
+        <div className="appearFromBottom pt-5 flex flex-col items-center">
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Technos
                 pratiquées</h5>
             <div className="grid grid-cols-4 gap-3 place-items-center mb-5 pt-2">
@@ -51,7 +49,7 @@ export function Skills(){
                 <img src={bootstrapLogo} alt="Logo Bootstrap" className={logoStyle}/>
             </div>
         </div>
-        <div className="pt-5 flex flex-col items-center">
+        <div className="appearFromLeft pt-5 flex flex-col items-center">
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">En
                 cours d&apos;apprentissage</h5>
             <div className="grid grid-cols-2 gap-1 place-items-center mb-5 pt-2 ">
@@ -59,7 +57,7 @@ export function Skills(){
                 <img src={tailwindcssLogo} alt="Logo TailwindCss" className={logoStyle}/>
             </div>
         </div>
-        <div className="pt-5 flex flex-col items-center">
+        <div className="appearFromRight pt-5 flex flex-col items-center">
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Mes
                 interets</h5>
             <div className="grid grid-cols-3 gap-1 place-items-center mb-5 pt-2">

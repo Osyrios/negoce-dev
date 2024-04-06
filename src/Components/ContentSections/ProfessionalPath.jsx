@@ -2,19 +2,17 @@ import logoGroupM from '../../assets/logo company/groupM.png'
 import logoFocus from '../../assets/logo company/FocusEntertainment.png'
 import logoRappFrance from '../../assets/logo company/rappFrance.jpg'
 import logoSeregec from '../../assets/logo company/seregec.jpg'
-import {useState} from "react";
-import {useInView} from "react-intersection-observer";
+import {useEffect, useState} from "react";
+import {observer} from "../tools/observer.js";
 
 export function ProfessionalPath() {
 
-    const { ref, inView, entry } = useInView({
-        threshold: 0.2,
-        onChange: (inView, entry) => {
-            if (inView){
-                entry.target.classList.add('reveal-visible')
-            }
-         },
-      });
+     useEffect(()=>{
+        document.querySelectorAll('.appearFromTop, .appearFromRight, .appearFromBottom, .appearFromLeft')
+            .forEach((t)=>{
+                observer.observe(t)
+            })
+        },[])
 
     const jobs = [
         {
@@ -61,9 +59,9 @@ export function ProfessionalPath() {
         setIsDescriptionDisplayed(!isDescriptionDisplayed)
     }
 
-    return <div ref={ref} className='reveal-minus-x m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14'>
+    return <div className='m-4 flex flex-col items-center gap-5 text-sm md:text-base md:m-14'>
 
-        <div className="md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
+        <div className="appearFromBottom md:flex-row md:flex md:justify-between flex flex-col items-center md:my-10">
             {jobs.map((job) =>
                 <div className='flex flex-col items-center my-2 ' key={job.company}>
                     <div className=' hover:underline hover:font-robotoBold font-robotoRegular flex flex-col justify-end hover:animate-bounce'>
@@ -85,7 +83,7 @@ export function ProfessionalPath() {
             )}
         </div>
 
-        <div className="m-0 p-0 font-robotoItalic">
+        <div className="appearFromRight m-0 p-0 font-robotoItalic">
             <input type="checkbox"
                    id="description"
                    name="description"
