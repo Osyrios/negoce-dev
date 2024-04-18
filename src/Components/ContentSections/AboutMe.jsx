@@ -21,7 +21,7 @@ export function AboutMe(){
                      className="appearFromRight ellip rounded-full mt-4 h-1/3 w-1/3 text-center md:h-2/6 md:w-2/6 lg:h-2/5 lg:w-2/5 xl:h-1/5 xl:w-1/5 xl:ms-10"
                 />
             <div className="appearFromBottom flex flex-col items-center xl:w-1/2">
-                    <h2 className=" font-robotoBold mb-3 text-lg"> Bienvenue sur mon portfolio en ligne !</h2>
+                    <h2 className=" font-robotoBold mb-3 text-lg"> Bienvenue sur mon portfolio</h2>
                     <div className="py-2 text-justify text-sm">
 
                         <p className="pb-3">

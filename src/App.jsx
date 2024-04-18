@@ -4,7 +4,7 @@ import {Footer} from "./Components/GlobalSections/Footer.jsx";
 
 function App() {
 
-  return <div className="bg-gray-400">
+  return <div className="bg-background">
     <Navbar />
     <Body />
     <Footer anchor={"contacts"}/>

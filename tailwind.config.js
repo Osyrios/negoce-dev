@@ -11,6 +11,14 @@ export default {
       'robotoItalic':['robotoItalic','Georgia'],
       'robotoBold':['robotoBold','Georgia']
     },
+    colors:{
+      titles: {
+        secondary : '#1d8bd4'
+      },
+
+      background:'#bfd8e3'
+    },
+      transparent:'transparent'
   },
   plugins: [],
 }
