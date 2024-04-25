@@ -42,8 +42,8 @@ export function Footer({anchor}){
             })
         },[])
 
-    return <div className="bg-blue-900 shadow flex-col items-center" id={anchor}>
-        <h1 className="appearFromLeft font-designer text-gray-400 text-center text-2xl py-4">Me contacter</h1>
+    return <div className="bg-titles-secondary shadow flex-col items-center" id={anchor}>
+        <h1 className="appearFromLeft font-designer text-white text-center text-2xl py-4">Me contacter</h1>
         <div className="appearFromLeft flex flex-col md:flex-row md:w-auto justify-center items-center m-auto pb-8 pt-2 ">
             {socials.map((social) =>
                 <div key={social.name} className="md:w-2/6 flex flex-row flex-start md:flex-col items-center">

@@ -30,11 +30,11 @@ export function Skills(){
     const logoStyle = 'h-20 '
 
     return <div className="mx-7 mt-6">
-        <div className="appearFromRight text-center font-robotoBold underline animate-pulse text-red-600  hover:scale-110">
+        <div className="appearFromRight text-center font-robotoBold underline animate-pulse text-red  hover:scale-110">
             <a href={negoceCv} target='_blank' className="hover:drop-shadow">Télécharger mon cv !</a>
         </div>
         <div className="appearFromBottom pt-5 flex flex-col items-center">
-            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Technos
+            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-textColor-navbar bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Technos
                 pratiquées</h5>
             <div className="grid grid-cols-4 gap-3 place-items-center mb-5 pt-2">
                 <img src={htmlLogo} alt="Logo HTML" className={logoStyle}/>
@@ -50,7 +50,7 @@ export function Skills(){
             </div>
         </div>
         <div className="appearFromLeft pt-5 flex flex-col items-center">
-            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">En
+            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-textColor-navbar bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">En
                 cours d&apos;apprentissage</h5>
             <div className="grid grid-cols-2 gap-1 place-items-center mb-5 pt-2 ">
                 <img src={reactjsLogo} alt="Logo ReactJs" className={logoStyle}/>
@@ -58,7 +58,7 @@ export function Skills(){
             </div>
         </div>
         <div className="appearFromRight pt-5 flex flex-col items-center">
-            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Mes
+            <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-textColor-navbar bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">Mes
                 interets</h5>
             <div className="grid grid-cols-3 gap-1 place-items-center mb-5 pt-2">
                 <img src={angular} alt="Logo AngularJS" className={logoStyle}/>

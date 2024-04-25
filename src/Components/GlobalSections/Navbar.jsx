@@ -3,15 +3,15 @@ import {useState} from "react";
 
 export function Navbar() {
 
-    let navClass = " bg-transparent w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl"
+    let navClass = " bg-transparent w-full p-4 md:p-2 md:pb-0 md:sticky md:top-0 md:z-50 md:rounded-b-3xl "
     let globalDivClass = "flex flex-wrap md:flex-col justify-center items-center mx-auto px-4 max-w-screen xl:flex-row xl:justify-between md:px-16"
     let leftDivClass = "flex items-center font-designer md:hidden xl:flex"
-    let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8"
-    let textClass = "capitalize font-bold text-white invisible md:visible  md:text-2xl"
-    let rightDivClass = "bg-blue-900 font-designer rounded-b-lg w-full mt-4 md:mb-0 md:block md:w-auto"
+    let imageClass = "h-12 me-6 md:h-20 md:me-6 xl:h-26 xl:me-8 drop-shadow-lg "
+    let textClass = "capitalize text-textColor-navbar font-bold invisible md:visible  md:text-2xl"
+    let rightDivClass = "font-designer rounded-b-lg w-full mt-4 md:mb-0 md:block md:w-auto "
     let ulClass = "font-bold flex flex-col p-4 mt-0 pt-0 border rounded-lg bg-blue-900 border-gray-400" +
         "md:mt-0 md:p-0 md:border-0 md:flex-row md:space-x-8  "
-    let liClass = "block py-2 px-3 bg-blue-900 rounded text-white hover:bg-blue-950 md:p-2 md:bg-transparent"
+    let liClass = "block py-2 px-3 bg-blue-900 rounded text-textColor-navbar hover:bg-blue-950 md:p-2 md:bg-transparent"
 
 
 
@@ -32,7 +32,7 @@ export function Navbar() {
 
 
                 <button type="button"
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
                         onClick={openMenu}>
                     <span className="sr-only">Ouvrir le menu</span>
                     <svg className="w-5 h-5"

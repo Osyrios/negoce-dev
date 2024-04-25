@@ -12,13 +12,19 @@ export default {
       'robotoBold':['robotoBold','Georgia']
     },
     colors:{
+      white: '#f0f0f3',
+      red: '#e71414',
       titles: {
         secondary : '#1d8bd4'
-      },
+              },
+      background:'#d6e7ec',
+      transparent:'transparent',
+      textColor:{
+        navbar : '#0e0e9a',
+                },
 
-      background:'#bfd8e3'
     },
-      transparent:'transparent'
+
   },
   plugins: [],
 }

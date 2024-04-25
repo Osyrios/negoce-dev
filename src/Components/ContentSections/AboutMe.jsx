@@ -18,7 +18,7 @@ export function AboutMe(){
         <div className=" flex flex-col justify-center items-center gap-5 mt-5 mb-16 mx-7 md:mx-0 md:justify-start md:gap-9 md:mt-16 md:mb-32 lg:flex-row xl:gap-32 font-robotoRegular">
                 <img src={photoYassine}
                      alt="image avec le logo YN"
-                     className="appearFromRight ellip rounded-full mt-4 h-1/3 w-1/3 text-center md:h-2/6 md:w-2/6 lg:h-2/5 lg:w-2/5 xl:h-1/5 xl:w-1/5 xl:ms-10"
+                     className="appearFromRight ellip rounded-full mt-4 h-1/3 w-1/3 text-center md:h-2/6 md:w-2/6 lg:h-2/5 lg:w-2/5 xl:h-1/5 xl:w-1/5 xl:ms-10 border-4 border-textColor-navbar"
                 />
             <div className="appearFromBottom flex flex-col items-center xl:w-1/2">
                     <h2 className=" font-robotoBold mb-3 text-lg"> Bienvenue sur mon portfolio</h2>
