@@ -83,7 +83,7 @@ export function ProfessionalPath() {
             )}
         </div>
 
-        <div className="appearFromRight m-0 p-0 font-robotoItalic">
+        <div className="appearFromLeft m-0 p-0 font-robotoItalic">
             <input type="checkbox"
                    id="description"
                    name="description"

@@ -12,15 +12,15 @@ export default {
       'robotoBold':['robotoBold','Georgia']
     },
     colors:{
-      white: '#f0f0f3',
+      white: '#c9c9cc',
       red: '#e71414',
       titles: {
-        secondary : '#1d8bd4'
+        secondary : '#1978b7'
               },
-      background:'#d6e7ec',
+      background:'#939494',
       transparent:'transparent',
       textColor:{
-        navbar : '#0e0e9a',
+        navbar : '#3f3f41',
                 },
 
     },
