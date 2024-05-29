@@ -13,9 +13,8 @@ export function Body(){
             <div className="mx-2 p-2 md:mx-32 md:p-4 xl:mx-52 xl:p-8">
                 <ArrowToTheTop/>
                 <MainTitle title={"Développeur d'applications"} />
-                <SectionTitle title={"Qui suis-je ?"} anchor={'aboutMe'}/>
                 <AboutMe/>
-                <SectionTitle title={"Mes compétences"}/>
+                <SectionTitle title={"Mes compétences"} anchor={'skills'}/>
                 <Skills/>
                 <SectionTitle title={"Mes projets"} anchor={'projects'}/>
                 <Projects/>

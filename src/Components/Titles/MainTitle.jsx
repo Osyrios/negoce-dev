@@ -11,7 +11,7 @@ export function MainTitle({title, anchor}) {
             })
         },[])
 
-    return <div className="appearFromRight text-center font-designer pt-16 md:pt-5 pb-2 md:text-start lg:mb-8 lg:mt-8 flex flex-row justify-center text-textColor-navbar bg-clip-text bg-gradient-to-br to-blue-900 from-gray-500"
+    return <div className="appearFromRight text-center font-designer pt-16 md:pt-5 pb-2 md:text-start lg:mb-8 lg:mt-8 flex flex-row justify-center text-transparent bg-clip-text bg-gradient-to-br from-textColor-navbar to-titles-secondary"
                 id={anchor}>
         <h1 className="font-bold lg:text-3xl text-2xl"> {title} </h1>
     </div>
