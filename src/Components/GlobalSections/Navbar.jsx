@@ -55,8 +55,8 @@ export function Navbar() {
                                className={liClass} onClick={openMenu}>Accueil</a>
                         </li>
                         <li>
-                            <a href="#aboutMe"
-                               className={liClass} onClick={openMenu}>A propos</a>
+                            <a href="#skills"
+                               className={liClass} onClick={openMenu}>Compétences</a>
                         </li>
                         <li>
                             <a href="#projects"
