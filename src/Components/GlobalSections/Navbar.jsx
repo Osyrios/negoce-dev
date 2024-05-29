@@ -26,7 +26,7 @@ export function Navbar() {
         <div className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
-                    <a href="negoce-dev.com">
+                    <a href="https://negoce-dev.com">
                         <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
                     </a>
                     <p className={textClass}>yassine négoce</p>
