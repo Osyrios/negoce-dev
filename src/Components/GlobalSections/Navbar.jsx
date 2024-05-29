@@ -26,7 +26,9 @@ export function Navbar() {
         <div className={navClass}>
             <div className={globalDivClass}>
                 <div className={leftDivClass}>
-                    <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
+                    <a href="#">
+                        <img src={logo} alt="logo Yassine Négoce" className={imageClass}/>
+                    </a>
                     <p className={textClass}>yassine négoce</p>
                 </div>
 
