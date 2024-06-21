@@ -18,9 +18,9 @@ export function Body(){
                 <Skills/>
                 <SectionTitle title={"Mes projets"} anchor={'projects'}/>
                 <Projects/>
-                <SectionTitle title={"Mon Parcours"} anchor={'path'} />
-                <SchoolPath/>
                 <SectionTitle title={"Formations"}/>
+                <SchoolPath/>
+                <SectionTitle title={"Mon Parcours"} anchor={'path'} />
                 <ProfessionalPath/>
             </div>
         </div>
