@@ -30,27 +30,8 @@ export function AboutMe(){
                     </p>
 
                     <p className="pb-3">
-                        Après 8 ans en tant que comptable, il est temps pour moi de quitter ce milieu pour le monde du
-                        développement.
-                    </p>
-
-                    <p className="pb-3">
-                        Mi-2022, j&apos;ai entamé mon aventure dans la reconversion professionnelle afin de pouvoir
-                        enfin lier travail et passion !
-                    </p>
-
-                    <p className="pb-3">
-                        C&apos;est donc après une remise a la pratique du code que j&apos;ai débuté ma formation de
-                        développeur chez Studi !<br/>
-                        Une formation suivie en parallèle de mon métier et de ma vie de famille et de laquelle je suis
-                        sorti diplômé d&apos;un
-                        bachelor &quot;Développeur de solutions digitales&quot; !
-                    </p>
-
-                    <p className="pb-3">
-                        Me voilà donc titulaire d&apos;un bachelor et en pleine recherche d&apos;opportunités !<br/>
-                        En attendant, je continue de m&apos;exercer et j&apos;ajouterais au fur et à mesure mes projets
-                        à ce site !
+                        Après une formation de développeur chez Studi,<br/>
+                        J'ai décroché un bachelor de developpeur d'applications !<br/>
                     </p>
 
                     <p className="pt-2 text-center font-robotoItalic text-lg ">
