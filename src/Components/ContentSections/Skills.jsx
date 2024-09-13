@@ -47,6 +47,8 @@ export function Skills(){
                 <img src={flaskLogo} alt="Logo Flask" className={logoStyle}/>
                 <img src={jinja2Logo} alt="Logo Jinja2" className={logoStyle + 'col-span-2'}/>
                 <img src={bootstrapLogo} alt="Logo Bootstrap" className={logoStyle}/>
+                <img src={reactjsLogo} alt="Logo ReactJs" className={logoStyle}/>
+                <img src={tailwindcssLogo} alt="Logo TailwindCss" className={logoStyle}/>
             </div>
         </div>
         <div className="appearFromLeft pt-5 flex flex-col items-center">
