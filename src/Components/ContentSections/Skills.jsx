@@ -55,8 +55,7 @@ export function Skills(){
             <h5 className="text-center font-designer my-2 p-4 w-9/12 text-sm md:text-base lg:text-lg xl:text-xl shadow-xl rounded-2xl text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-gray-400 mb-4">En
                 cours d&apos;apprentissage</h5>
             <div className="grid grid-cols-2 gap-1 place-items-center mb-5 pt-2 ">
-                <img src={reactjsLogo} alt="Logo ReactJs" className={logoStyle}/>
-                <img src={tailwindcssLogo} alt="Logo TailwindCss" className={logoStyle}/>
+                <img src={vuejsLogo} alt="Logo VueJs" className={logoStyle}/>
             </div>
         </div>
         <div className="appearFromBottom pt-5 flex flex-col items-center">
@@ -65,7 +64,6 @@ export function Skills(){
             <div className="grid grid-cols-3 gap-1 place-items-center mb-5 pt-2">
                 <img src={angular} alt="Logo AngularJS" className={logoStyle}/>
                 <img src={djangoLogo} alt="Logo Django" className={logoStyle}/>
-                <img src={vuejsLogo} alt="Logo VueJs" className={logoStyle}/>
                 <img src={wordpress} alt="Logo Wordpress" className={logoStyle}/>
                 <img src={shopify} alt="Logo Shopify" className={logoStyle}/>
             </div>
