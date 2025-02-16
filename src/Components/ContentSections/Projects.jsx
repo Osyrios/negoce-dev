@@ -54,7 +54,7 @@ export function Projects(){
                                 </ul>
                             </li>
                             <li><span className="underline font-robotoItalic">lien</span> :
-                                <a href={project.link ? project.link : "#"} target={project.link ? 'blank' : ""} className="text-blue-600 font-robotoBold"> {project.link ? "Visiter le site" : "Me contacter pour plus de details"}</a></li>
+                                <a href={project.link ? project.link : "#contacts"} target={project.link ? 'blank' : ""} className="text-blue-600 font-robotoBold"> {project.link ? "Visiter le site" : "Me contacter pour plus de details"}</a></li>
                         </ul>
                     </div>
                 </div>
