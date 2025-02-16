@@ -13,7 +13,7 @@ export function Projects(){
         {
             "name" : "Mercadona",
             "stack" : ["Python", "Flask","jinja2", "Bootstrap","PostgreSQL"],
-            "link" : "https://mercadona-ul6bi.ondigitalocean.app/",
+            "link" : "",
             "context" : "Examen bachelor développeur d'applications"
         },
         {
