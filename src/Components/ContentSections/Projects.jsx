@@ -23,8 +23,8 @@ export function Projects(){
             "context" : "Copie du site Karmine.fr en utilisant uniquement HTML et CSS"
         },
         {
-            "name" : "Projet S",
-            "stack" : ["HTML", "CSS", "PHP"],
+            "name" : "JDR",
+            "stack" : ["HTML", "Javascript", "PHP", "TailwindCSS"],
             "link" : "",
             "context" : "En cours..."
         },
