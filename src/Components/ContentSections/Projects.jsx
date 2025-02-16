@@ -27,12 +27,6 @@ export function Projects(){
             "stack" : ["HTML", "Javascript", "PHP", "TailwindCSS"],
             "link" : "",
             "context" : "En cours..."
-        },
-        {
-            "name" : "A venir",
-            "stack" : [""],
-            "link" : "",
-            "context" : ""
         }
     ]
 
