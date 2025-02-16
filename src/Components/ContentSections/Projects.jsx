@@ -45,7 +45,7 @@ export function Projects(){
                         <p className="text-center"></p>
                         <ul className="ms-10 sm:ms-0">
                             <li><span className="underline font-robotoItalic">Nom</span> :<br/> <span className="ps-4">{project.name}</span></li>
-                            <li className="text-wrap"><span className="underline font-robotoItalic">Context</span> :<br/> <span className="ps-4">{project.context}</span></li>
+                            <li className="text-wrap"><span className="underline font-robotoItalic">Contexte</span> :<br/> <span className="ps-4">{project.context}</span></li>
                             <li><span className="underline font-robotoItalic">Stack</span> :<br/>
                                 <ul className="ps-4">
                                     {project.stack.map((tech)=>
